@@ -1,29 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Weapon.hpp                                         :+:      :+:    :+:   */
+/*   sed.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dikhalil <dikhalil@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/23 16:36:05 by dikhalil          #+#    #+#             */
-/*   Updated: 2025/10/24 17:57:16 by dikhalil         ###   ########.fr       */
+/*   Created: 2025/10/24 19:26:37 by dikhalil          #+#    #+#             */
+/*   Updated: 2025/10/24 19:42:38 by dikhalil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef WEAPON_HPP
-#define WEAPON_HPP
+#ifndef SED_HPP
+#define SED_HPP
 
 #include <iostream>
+#include <fstream>
 #include <string>
 
-class Weapon
-{
-    private:
-        std::string type;
-    public:
-        Weapon(std::string type);
-        void setType(std::string type);
-        const std::string &getType(void) const;
-};
+void sed(const std::string &fileName, const std::string &s1, const std::string &s2);
 
 #endif

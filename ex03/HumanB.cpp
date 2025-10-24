@@ -6,7 +6,7 @@
 /*   By: dikhalil <dikhalil@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 16:50:02 by dikhalil          #+#    #+#             */
-/*   Updated: 2025/10/23 17:53:34 by dikhalil         ###   ########.fr       */
+/*   Updated: 2025/10/23 21:48:59 by dikhalil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ void HumanB::setWeapon(Weapon &weapon)
 }
 void HumanB::attack(void) const
 {
-    std::cout << name << " attacks with their "
-              << weapon->getType() << std::endl;
+    if (weapon)
+        std::cout << name << " attacks with their " << weapon->getType() << std::endl;
+    else
+        std::cout << name << " weapon not set" << std::endl;       
 }
