@@ -6,7 +6,7 @@
 /*   By: dikhalil <dikhalil@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 00:01:42 by dikhalil          #+#    #+#             */
-/*   Updated: 2025/10/24 17:58:12 by dikhalil         ###   ########.fr       */
+/*   Updated: 2025/10/31 17:19:58 by dikhalil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@ class Zombie
     private:
         std::string name;
     public:
+        Zombie(void);
         Zombie(std::string name);
         ~Zombie(void);
-        Zombie(void);
         void setName(std::string name);
         std::string getName(void) const;
         void announce(void) const;

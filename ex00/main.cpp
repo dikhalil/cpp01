@@ -6,7 +6,7 @@
 /*   By: dikhalil <dikhalil@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 00:01:29 by dikhalil          #+#    #+#             */
-/*   Updated: 2025/10/23 15:08:15 by dikhalil         ###   ########.fr       */
+/*   Updated: 2025/10/31 17:17:57 by dikhalil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 int main(void)
 {
-    Zombie zombie("Foo");
-    
-    zombie.announce();
+    Zombie *zombie = newZombie("Foo");
+    zombie->announce();
+    randomChump("Boo");
+    delete (zombie);
 }

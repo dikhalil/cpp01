@@ -6,7 +6,7 @@
 /*   By: dikhalil <dikhalil@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 00:02:20 by dikhalil          #+#    #+#             */
-/*   Updated: 2025/10/23 14:58:54 by dikhalil         ###   ########.fr       */
+/*   Updated: 2025/10/31 17:17:17 by dikhalil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,6 @@
 
 void randomChump(std::string name)
 {
-    Zombie *zombie;
-
-    zombie = newZombie(name);
-    zombie->announce();
-    delete (zombie);
+    Zombie zombie(name);
+    zombie.announce();
 }
